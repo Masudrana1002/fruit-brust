@@ -37,60 +37,65 @@
 </head>
 
 <body class="lato">
-    <header class="max-w-screen-2xl mx-auto mt-0 px-4 lg:px-24 py-4">
-        <!-- nav bar start -->
-        <nav>
-            <div class="navbar rounded-full  bg-common-collor">
-                <div class="navbar absolute md:static  ">
 
-                    <div class="navbar  text-white hidden lg:flex">
-                        <ul class="menu text-lg	font-semibold menu-horizontal  px-1">
-                            <li><a>Home</a></li>
-                            <li><a>About Us</a></li>
-                            <li><a>Shop</a></li>
-                            <li><a>All Fruits</a></li>
+    <header class="max-w-screen-2xl mx-auto mt-0 px-4 lg:px-24 py-4">
+        <div class="navbar rounded-full  bg-common-collor">
+            <div class=" justify-between flex flex-row-reverse">
+                <div class="navbar-start flex flex-row-reverse">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
                         </ul>
                     </div>
-
-                </div>
-                <div class="gap-2 md:left-20 lg:absolute lg:left-[600px] ">
-                    <div>
-                        <img src="./images/logo.png" alt="">
+                    <div class="gap-2 flex flex-row items-center ">
+                        <div>
+                            <img src="./images/logo.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold	text-white	">
+                                Fruit Burst
+                            </h3>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="text-3xl font-bold	text-white	">
-                            Fruit Burst
-                        </h3>
-                    </div>
                 </div>
-                <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost w-32 lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </label>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-16">
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruits</a></li>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Item 1</a></li>
+                        <li tabindex="0">
+                            <details>
+                                <summary>Parent</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end lg:visible	invisible	">
-                    <div class="relative">
-                        <input class="input input-bordered rounded-full pr-32" type="text" placeholder="Search here">
-                        <button class=" absolute top-1/4 right-5"><i
-                                class="fa-solid fa-magnifying-glass text-black"></i></button>
-
-                    </div>
-
+            </div>
+            <div class="navbar-end lg:visible	invisible	">
+                <div class="relative">
+                    <input class="input input-bordered rounded-full pr-32" type="text" placeholder="Search here">
+                    <button class=" absolute top-1/4 right-5"><i class="fa-solid fa-magnifying-glass text-black"></i></button>
                 </div>
             </div>
-        </nav>
-        <!-- nav bar end -->
     </header>
     <main>
         <!-- Slaider start -->
@@ -277,9 +282,9 @@
                                                 <input type="radio" name="rating-2"
                                                     class="mask mask-star-2 bg-orange-400" />
                                                 <input type="radio" name="rating-2"
-                                                    class="mask mask-star-2 bg-orange-400"  />
+                                                    class="mask mask-star-2 bg-orange-400" />
                                                 <input type="radio" name="rating-2"
-                                                    class="mask mask-star-2 bg-orange-400" checked/>
+                                                    class="mask mask-star-2 bg-orange-400" checked />
                                                 <input type="radio" name="rating-2"
                                                     class="mask mask-star-2 bg-orange-400" />
                                                 <input type="radio" name="rating-2"
@@ -370,8 +375,8 @@
                         <div class="rating">
                             <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400"  />
-                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400"checked />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked />
                             <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="card-actions">
@@ -393,7 +398,7 @@
                                                 <input type="radio" name="rating-2"
                                                     class="mask mask-star-2 bg-orange-400" />
                                                 <input type="radio" name="rating-2"
-                                                    class="mask mask-star-2 bg-orange-400"  />
+                                                    class="mask mask-star-2 bg-orange-400" />
                                                 <input type="radio" name="rating-2"
                                                     class="mask mask-star-2 bg-orange-400" />
                                                 <input type="radio" name="rating-2"
@@ -450,11 +455,11 @@
                                                 <input type="radio" name="rating-2"
                                                     class="mask mask-star-2 bg-orange-400" />
                                                 <input type="radio" name="rating-2"
-                                                    class="mask mask-star-2 bg-orange-400"  />
+                                                    class="mask mask-star-2 bg-orange-400" />
                                                 <input type="radio" name="rating-2"
                                                     class="mask mask-star-2 bg-orange-400" />
                                                 <input type="radio" name="rating-2"
-                                                    class="mask mask-star-2 bg-orange-400"checked />
+                                                    class="mask mask-star-2 bg-orange-400" checked />
                                             </div>
                                             <div class="card-actions flex items-center justify-center">
                                                 <div class="modal-action gap-x-4">
@@ -498,9 +503,11 @@
                             <h2 class="font-bold">Awlad Hossain</h2>
                             <p class="text-base">Fruits Expert</p>
                             <div class="text-common-collor text-2xl">
-                                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/"><i
+                                        class="fa-brands fa-facebook"></i></a>
                                 <a target="_blank" href="https://twitter.com/"> <i class="fa-brands fa-twitter"></i></a>
-                                 <a target="_blank" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                                <a target="_blank" href="https://www.linkedin.com/"><i
+                                        class="fa-brands fa-linkedin"></i></a>
                             </div>
                         </div>
                         <div class=" flex justify-center items-center flex-col">
@@ -510,9 +517,11 @@
                             <h2 class="font-bold">Safia Chowdhury</h2>
                             <p class="text-base">Fruits Expert</p>
                             <div class="text-common-collor text-2xl">
-                                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/"><i
+                                        class="fa-brands fa-facebook"></i></a>
                                 <a target="_blank" href="https://twitter.com/"> <i class="fa-brands fa-twitter"></i></a>
-                                 <a target="_blank" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                                <a target="_blank" href="https://www.linkedin.com/"><i
+                                        class="fa-brands fa-linkedin"></i></a>
                             </div>
                         </div>
                         <div class=" flex justify-center items-center flex-col">
@@ -522,9 +531,11 @@
                             <h2 class="font-bold">Rokib Hossain</h2>
                             <p class="text-base">Fruits Expert</p>
                             <div class="text-common-collor text-2xl">
-                                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/"><i
+                                        class="fa-brands fa-facebook"></i></a>
                                 <a target="_blank" href="https://twitter.com/"> <i class="fa-brands fa-twitter"></i></a>
-                                 <a target="_blank" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                                <a target="_blank" href="https://www.linkedin.com/"><i
+                                        class="fa-brands fa-linkedin"></i></a>
                             </div>
                         </div>
                         <div class=" flex justify-center items-center flex-col">
@@ -534,9 +545,11 @@
                             <h2 class="font-bold">Safia Chowdhury</h2>
                             <p class="text-xs	">Fruits Expert</p>
                             <div class="text-common-collor text-2xl">
-                                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                               <a target="_blank" href="https://twitter.com/"> <i class="fa-brands fa-twitter"></i></a>
-                                <a target="_blank" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a target="_blank" href="https://twitter.com/"> <i class="fa-brands fa-twitter"></i></a>
+                                <a target="_blank" href="https://www.linkedin.com/"><i
+                                        class="fa-brands fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
